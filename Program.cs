@@ -8,21 +8,21 @@ Console.WriteLine($"[{String.Join(", ", string3)}] -> [{String.Join(", ", ShortS
 
 string[] ShortStringsArr(string[] str)
 {
-    string[] string1 = new string[str.GetLength(0)];
+    string[] short_string1 = new string[str.GetLength(0)];
     int count = 0;
     for (int i = 0; i < str.GetLength(0); i++)
     {
         if (str[i].Length <= 3)
         {
-            string1[count] = str[i];
+            short_string1[count] = str[i];
             count++;
         }
     }
 
-    string[] string2 = new string[count];
+    string[] short_string2 = new string[count];
     for (int i = 0; i < count; i++)
     {
-        string2[i] = string1[i];
+        short_string2[i] = short_string1[i];
     }
-    return string2;
+    return short_string2;
 }
